@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "tFAY4YsrByaYETOVZwg4Nu9IVMq3StxKlKIc7w1WVbA7ah4WsNsYOM5gnb7aTMaiNeyX1SAxCcCsdinf7XEd7A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Asus\\Desktop\\FullStackC#\\Mostenirea\\Airlines-Management\\Airlines-Management\\Airlines-Management.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Asus\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.21\\microsoft.netcore.app.host.win-x64.3.1.21.nupkg.sha512"
+  ],
+  "logs": []
+}
