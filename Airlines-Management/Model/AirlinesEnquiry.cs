@@ -7,13 +7,13 @@ namespace Airlines_Management.Model
     public class AirlinesEnquiry : Enquiry
     {
         private int airlinesid;
-        private int price;
+        private string route;
         private string date;
 
-        public AirlinesEnquiry(int airlinesid,int price,string date, int id, string type, string description, string title) : base(id, "Airlines", description, title)
+        public AirlinesEnquiry(int airlinesid,string route,string date, int id, string type, string description, string title) : base(id, "Airlines", description, title)
         {
             this.airlinesid = airlinesid;
-            this.price = price;
+            this.route = route;
             this.date = date;
         }
 
@@ -21,7 +21,7 @@ namespace Airlines_Management.Model
         {
             string[] prop = props.Split(",");
             this.airlinesid = Int32.Parse(prop[4]);
-            this.price = Int32.Parse(prop[5]);
+            this.route = prop[5];
             this.date = prop[6];
         }
 
@@ -31,10 +31,10 @@ namespace Airlines_Management.Model
             set { this.airlinesid = value; }
         }
 
-        public int Price
+        public string Route
         {
-            get { return this.price; }
-            set { this.price = value; }
+            get { return this.route; }
+            set { this.route = value; }
         }
 
         public string Date
@@ -46,7 +46,7 @@ namespace Airlines_Management.Model
         public override string ToString()
         {
 
-            return base.ToString() + "," + this.airlinesid + "," + this.price + "," + this.date;
+            return base.ToString() + "," + this.airlinesid + "," + this.route + "," + this.date;
 
         }
     }
