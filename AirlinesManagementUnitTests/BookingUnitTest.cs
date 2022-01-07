@@ -10,7 +10,7 @@ namespace AirlinesManagementUnitTests
     public class BookingUnitTest
     {
 
-        
+
 
             private ControllerBooking control;
 
@@ -29,29 +29,10 @@ namespace AirlinesManagementUnitTests
             {
                 control.load();
 
-                ControllerBank c = new ControllerBank();
+                ControllerBooking c = new ControllerBooking();
 
                 output.WriteLine(c.ToString());
             }
-            [Fact]
-            public void TestUpdateDescription()
-            {
-                control.load();
-
-                control.updateDescription(1, "update");
-
-                Assert.Equal("update", control.bankById(1).Description);
-
-            }
-            [Fact]
-            public void TestUpdateCode()
-            {
-                control.load();
-
-                control.updateCode(1, "updatecode");
-
-                Assert.Equal("updatecode", control.bankById(1).Code);
-
-            }
+          
         }
 }
